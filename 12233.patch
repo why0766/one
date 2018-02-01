@@ -1,0 +1,35 @@
+Index: src/main/resources/application-default.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/application-default.yaml	(revision acd29b49f18c43b24324afc4347fbc4e14a37268)
++++ src/main/resources/application-default.yaml	(date 1516242248580)
+@@ -19,7 +19,7 @@
+   application:
+     name: admin
+   datasource:
+-    url: jdbc:mysql://localhost:3307/admin?characterEncoding=utf-8
++    url: jdbc:mysql://localhost:3306/admin?characterEncoding=utf-8
+     username: root
+     password: 123456
+     driver-class-name: com.mysql.jdbc.Driver
+Index: src/main/resources/application-prod.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/main/resources/application-prod.yaml	(revision acd29b49f18c43b24324afc4347fbc4e14a37268)
++++ src/main/resources/application-prod.yaml	(date 1516201590161)
+@@ -20,9 +20,9 @@
+   application:
+     name: admin
+   datasource:
+-     url: jdbc:mysql://localhost:3307/admin?characterEncoding=utf-8
++     url: jdbc:mysql://localhost:3306/admin?characterEncoding=utf-8
+     username: root
+-    password: shadowsocks
++    password: 123456
+     driver-class-name: com.mysql.jdbc.Driver
+     type: com.alibaba.druid.pool.DruidDataSource
+     druid:
